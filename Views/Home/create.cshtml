@@ -1,0 +1,21 @@
+<h2>Plan Your Wedding!</h2>
+<br>
+<div class="left">
+    @model WeddingModel
+    <form asp-controller="Home" asp-action="new" method="post">
+    <span class="error" asp-validation-for="WedderOne"></span><br>
+    <input class="place_input" placeholder="Wedder One" type="text" asp-for="WedderOne"><br>
+    
+    <span class="error" asp-validation-for="WedderTwo"></span><br>        
+    <input class="place_input" placeholder="Wedder Two" type="text" asp-for="WedderTwo"><br>
+
+    <span class="error" asp-validation-for="Date"></span><br>
+    <input class="place_input" placeholder="Date" type="date" asp-for="Date"><br>
+    
+    <span class="error" asp-validation-for="Address"></span><br>        
+    <input class="place_input" placeholder="Wedding Address" type="text" asp-for="Address"><br>
+    <br>
+    <br>
+    <button type="submit">Plan on it!</button>
+    </form>
+</div>
